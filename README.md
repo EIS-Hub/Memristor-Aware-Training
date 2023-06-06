@@ -24,23 +24,23 @@ Existing scientific publications of a similar implementations are:
 
 
 ### To run an example of the Memristor-Aware-Training (on your terminal):
-- mnist) python main.py -task mnist -noise_sd 0.2 -epochs 30 clip_w 2.5 -verbose
-- cifar10) python main.py -task cifar10 -noise_sd 0.1 -epochs 100 -verbose
-- cifar100) python main.py -task cifar100 -noise_sd 0.1 -epochs 100 -verbose
+- mnist: python main.py -task mnist -noise_sd 0.2 -epochs 30 clip_w 2.5 -verbose
+- cifar10: python main.py -task cifar10 -noise_sd 0.1 -epochs 100 -verbose
+- cifar100: python main.py -task cifar100 -noise_sd 0.1 -epochs 100 -verbose
 
 ### Collecting Results:
-- mnist) with the notebook: MNIST_MLP
-- cifar10/100) with the notebook: CNN_CIFAR
-- ecg) with the notebook: Test_ECG
+- mnist: with the notebook MNIST_MLP
+- cifar10/100: with the notebook CNN_CIFAR
+- ecg: with the notebook Test_ECG
 
 (Filippo Moro)
 
 *References*
 
-[1] Ielmini, Daniele, and H-S. Philip Wong. "In-memory computing with resistive switching devices." Nature electronics 1.6 (2018): 333-343.
-[2] Ambrogio, Stefano, et al. "Equivalent-accuracy accelerated neural-network training using analogue memory." Nature 558.7708 (2018): 60-67.
-[3] Joshi, Vinay, et al. "Accurate deep neural network inference using computational phase-change memory." Nature communications 11.1 (2020): 2473.
-[4] Wan, Weier, et al. "A compute-in-memory chip based on resistive random-access memory." Nature 608.7923 (2022): 504-512.
-[5] Long, Yun, Xueyuan She, and Saibal Mukhopadhyay. "Design of reliable DNN accelerator with un-reliable ReRAM." 2019 Design, Automation & Test in Europe Conference & Exhibition (DATE). IEEE, 2019.
-[6] He, Zhezhi, et al. "Noise injection adaption: End-to-end ReRAM crossbar non-ideal effect adaption for neural network mapping." Proceedings of the 56th Annual Design Automation Conference 2019. 2019.
+[1] Ielmini, Daniele, and H-S. Philip Wong. "In-memory computing with resistive switching devices." Nature electronics 1.6 (2018): 333-343.\
+[2] Ambrogio, Stefano, et al. "Equivalent-accuracy accelerated neural-network training using analogue memory." Nature 558.7708 (2018): 60-67.\
+[3] Joshi, Vinay, et al. "Accurate deep neural network inference using computational phase-change memory." Nature communications 11.1 (2020): 2473.\
+[4] Wan, Weier, et al. "A compute-in-memory chip based on resistive random-access memory." Nature 608.7923 (2022): 504-512.\
+[5] Long, Yun, Xueyuan She, and Saibal Mukhopadhyay. "Design of reliable DNN accelerator with un-reliable ReRAM." 2019 Design, Automation & Test in Europe Conference & Exhibition (DATE). IEEE, 2019.\
+[6] He, Zhezhi, et al. "Noise injection adaption: End-to-end ReRAM crossbar non-ideal effect adaption for neural network mapping." Proceedings of the 56th Annual Design Automation Conference 2019. 2019.\
 [7] Ye, Nanyang, et al. "Improving the robustness of analog deep neural networks through a Bayes-optimized noise injection approach." Communications Engineering 2.1 (2023): 25.
