@@ -22,38 +22,8 @@ from torch.nn.modules.batchnorm import _NormBase
 from torchvision.utils import _log_api_usage_once, _make_ntuple
 from torch.nn import init, Module
 from torch.nn import functional as Ftup
+from utils import Noisy_Inference
 
-
-class Noisy_Inference(torch.autograd.Function):
-    """
-    Function taking the weight tensor as input and applying noise with standard deviation (noise_sd)
-    and outputing the noisy version for the forward pass, but keeping track of the original
-    de-noised version of the weight for the backward pass
-    """
-    noise_sd = 1e-2
-
-    @staticmethod
-    def forward(ctx, input):
-        """
-        In the forward pass we add some noise from a gaussian distribution
-        """
-        ctx.save_for_backward( input )
-        weight = input.clone()
-        delta_w = torch.abs( weight ).max()
-        noise = torch.randn_like( weight )*( Noisy_Inference.noise_sd * delta_w )
-        return torch.add( weight, noise )
-
-    @staticmethod
-    def backward(ctx, grad_output):
-        """
-        In the backward pass we simply copy the gradient from upward in the computational graph
-        """
-        input, = ctx.saved_tensors
-        weight = input.clone()
-        return grad_output
-    
-### define the Convd2D with noisy weight (modify torch.nn.conv2d)
-# this will go to the ConvNormActivation
 
 class Conv2d(_ConvNd):
     __doc__ = r"""Applies a 2D convolution over an input signal composed of several input
