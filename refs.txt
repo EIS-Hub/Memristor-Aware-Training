@@ -1,4 +1,12 @@
 Related papers:
 
+Literature on noise-injection for training memristive-based systems:
 - https://www.nature.com/articles/s41467-020-16108-9
-- https://www.nature.com/articles/s41586-022-04992-8
+- https://ieeexplore.ieee.org/document/8715178
+- https://ieeexplore.ieee.org/document/9129313
+- https://www.nature.com/articles/s44172-023-00074-3
+- https://ieeexplore.ieee.org/document/8806787
+
+In-Memory Computing outlook
+- https://pubs.aip.org/aip/aml/article/1/1/010902/2878744
+- https://ieeexplore.ieee.org/abstract/document/10103697
